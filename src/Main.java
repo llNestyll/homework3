@@ -1,4 +1,4 @@
-import java.math.BigInteger;
+
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -15,7 +15,7 @@ public class Main {
         System.out.println("Значение переменной  rang с типом byte равно " + rang);
         short yuo = 30052;
         System.out.println("Значение переменной  you с типом short равно " + yuo);
-        long duo = 90019838;
+        long duo = 90019838L;
         System.out.println("Значение переменной  duo с типом long равно " + duo);
         float raf = 2.312F;
         System.out.println("Значение переменной  raf с типом float равно " + raf);
@@ -25,10 +25,8 @@ public class Main {
 
         float bin = 27.12F;
         System.out.println("Значение переменной  bin с типом float равно " + bin);
-        long catBin = 987678965;
+        long catBin = 987678965549L;
         System.out.println("Значение переменной  catBin с типом long равно " + catBin);
-        BigInteger qin = new BigInteger("987678965549");
-        System.out.println("Значение переменной  qin с типом BigInteger равно " + qin);
         double b = 2.786;
         System.out.println("Значение переменной  b с типом double равно " + b);
         int a = 569;
@@ -51,7 +49,8 @@ public class Main {
 
         byte bottle = 16;
         byte time = 2;
-        int bottle2 = bottle/time * 20;
+        int bottleMinut = bottle/time;
+        int bottle2 = bottleMinut * 20;
         System.out.println("за 20 минут машина произвела  " + bottle2 + "  штук бутылок");
 
         int bottle3 = bottle * 720;
@@ -105,13 +104,13 @@ public class Main {
         float newDenis = denis + denis * percent;
         float newKris = kris + kris * percent;
         int mashaYear = masha * 12;
-        float mashaYear1 = newMasha * 12;
+        float mashaYear1 = newMasha * 12f;
         float mashaDif = mashaYear1 - mashaYear;
         int denYear = denis * 12;
-        float denYear1 = newDenis * 12;
+        float denYear1 = newDenis * 12f;
         float denDif = denYear1 - denYear;
         int krisYear = kris * 12;
-        float krisYear1 = newKris * 12;
+        float krisYear1 = newKris * 12f;
         float krisDif = krisYear1 - krisYear;
 
         System.out.println("Маша теперь получает " + newMasha + " рублей, годовой доход вырос на " + mashaDif + " рублей");
