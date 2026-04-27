@@ -49,7 +49,7 @@ public class Main {
 
         byte bottle = 16;
         byte time = 2;
-        int bottleMinut = bottle/time;
+        int bottleMinut = bottle / time;
         int bottle2 = bottleMinut * 20;
         System.out.println("за 20 минут машина произвела  " + bottle2 + "  штук бутылок");
 
@@ -65,12 +65,12 @@ public class Main {
 
         byte allMask = 120;
         byte white1 = 2;
-        byte brown1 = 4;
-        int oneclass = white1 + brown1;
-        int classes = allMask / oneclass;
+        byte brownq = 4;
+        int onelass = white1 + brownq;
+        int classes = allMask / onelass;
         System.out.println("в школе " + classes + " классов");
         int white2 = white1 * classes;
-        int brown2 = brown1 * classes;
+        int brown2 = brownq * classes;
         System.out.println("В школе, где " + classes + " классов, нужно " + white2 + " банок белой краски и " + brown2 + " банок коричневой краски");
 
 
